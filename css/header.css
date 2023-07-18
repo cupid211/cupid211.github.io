@@ -1,0 +1,227 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+header,footer{
+    width:100%;
+    height: 70px;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+header{
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    color: snow;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*,*:before,*:after{
+  box-sizing:content-box;
+}
+
+.title{
+    color:darkgreen;
+    font-size: 50px ;
+    font-family: 'Ballet', cursive;
+    text-align:center; 
+    padding-left: 30px;
+}
+
+/*Первый, вид*/
+.menu{
+    position: static;
+    text-align: right;
+    font-family: "Amatic SC",cursive;
+    font-size: 30px;
+    vertical-align: top;
+    margin-right:40px;
+}
+
+.l{
+    color:darkolivegreen;
+}
+
+.about{
+    display: block;
+    text-align: center;
+}
+
+h1{
+    font-size: 27px;
+    font-family: "Caveat",cursive;
+    color:darkolivegreen
+}
+
+h3{
+    color: darkolivegreen
+}
+
+
+.map{
+    display:inline-flex;
+    height: auto;
+    width:100%;
+}
+
+.m1{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    height: 100%;
+}
+
+.m1 img{
+    margin: 0px 10px;;
+}
+
+.m1 h4{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.m1 .about{
+    height: 100%;
+    display: flex;
+}
+
+.main{
+    padding-top: 10px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+}
+
+.call{
+    background: darkolivegreen;
+    color:snow;
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.vvd {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tet{
+    font-size: 22px;
+    font-family: 'Pacifico',cursive;
+}
+
+.btn{
+    border:3px solid snow;
+    text-align: center;
+    width: 40%;
+    left: 29%;
+    position: relative;
+    padding: 10px;
+    margin-bottom:  40px;
+    font-size: 25px;
+}
+
+.btn a{
+    color: snow;
+}
+
+input{
+    font-size: 25px;
+    color: darkgreen;
+    border-color: floralwhite;
+}
+
+.bl{
+    display: inline-block;
+    margin: 0 auto
+}
+
+.in{
+    height: 80px;
+}
+
+a{
+    color:darkolivegreen;
+    transition: color .2s linear;
+    text-decoration: none;
+    padding-left: 25px;
+}
+a:hover{
+    color:chocolate;
+    text-decoration:underline;
+}
+a:active{
+    color: snow;
+}
+
+footer{
+    margin-top: 20px;
+    display: block;
+    background: darkgreen;
+    width: 100%;
+}
+
+footer .title{
+    font-size: 70px;
+    text-align: center;
+    color: darkolivegreen;
+    padding: 0;
+    margin: 0;
+    background: white;
+    color: darkolivegreen;
+}
+
+footer .menu{
+    text-align: center;
+    background: darkolivegreen;
+    width: 100%;
+}
+
+footer .title:after,footer .title:before{
+    margin-bottom: 10px;;
+    content:"";
+    display:block;
+    width: 100%;
+    height:3px;
+    background: darkolivegreen;
+}
+
+footer .l{
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    background: darkolivegreen;
+}
+
+
+@media screen and (max-width:600px){
+    .vvd{
+        display:block;
+    }
+    header{
+        height: auto;
+    }
+    .tet{
+        font-size: 25px;
+    }
+    input{ width:  170px;
+    font-size: 19px;}
+    .map{ padding-bottom: 600px}
+    .m1 {display:block;
+         margin: auto}
+    .m1 img{padding-top: 10px}
+    .call{max-width: 100%}
+    h1 {font-size: 30px}
+    .menu{ font-size: 25px;
+    width: 100%}
+}

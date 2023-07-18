@@ -1,0 +1,459 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body{
+    overflow-y: auto
+}
+
+header,footer{
+    width:100%;
+    height: 70px;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+header{
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    color: snow;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*,*:before,*:after{
+  box-sizing:border-box;  
+}
+
+.title{
+    color:darkgreen;
+    font-size: 50px ;
+    font-family: 'Ballet', cursive;
+    text-align:center; 
+    padding-left: 30px;
+}
+
+
+/*Первый, вид*/
+.menu{
+    position:static;
+    text-align: right;
+    font-family: "Amatic SC",cursive;
+    font-size: 30px;
+    vertical-align: top;
+    margin-right:40px;
+}
+
+.l{
+    color:darkolivegreen;
+}
+
+.container{
+    display: block;
+    height: 100vh;
+    width:100%;
+    max-width: 100%;
+    min-height: 100%;
+    background: url("../image/fl.jpg") no-repeat center center;
+    background-size:cover;
+    -webkit-background-size:cover;
+    display: flex;/*стыкует элементы*/ 
+    text-align: center;
+}
+
+
+.btext{
+    position: static;
+    display:block;
+    width:100%;
+    max-width: 880px;
+    height: 100%;
+    margin:0 auto;
+}
+
+h1{
+    color: snow;
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 1;
+}
+h1:after{
+    width: 880px;
+    height:3px;
+    background: snow;
+}
+
+h2{
+    font-size: 35px;
+    color:floralwhite;
+}
+
+
+.btn1{
+    position: static;
+    font-size: 20px;
+    background-color:darkolivegreen;
+    border:3px solid snow;
+    color:white;
+    vertical-align:bottom;
+    padding: 10px 25px;
+    margin-top: 40px;
+    transition: background .3s linear;
+}
+.btn1:hover{
+   font-size: 25px;
+   color:darkgreen;
+    background-color: snow;
+   text-decoration:inherit;
+}
+
+.blc{
+    display:inline-flex;    
+}
+
+
+.bl{
+    top:0;
+    left: 0;
+    width: 280px;
+    border:3px solid darkolivegreen;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.bl img {
+    width: 100px;
+    height: 100px;
+}
+
+.bl .menu{
+    display:block;
+    text-align: center;
+}
+
+.btn{
+    font-size: 20px;
+    position: static;
+    border:1px solid darkolivegreen;
+    color:black;
+    vertical-align:bottom;
+    padding: 10px 25px;
+    margin-top: 40px;
+    transition: padding .2s inlinear;
+    
+}
+
+.btn:hover{
+    color:darkgreen;
+    text-decoration:underline;
+}
+
+
+/*Работы магагзина*/
+.third{
+    text-align: center;
+     height: 200vh;
+    width:100%;
+    background: url("../image/b5.jpg") no-repeat center center;
+    background-size:cover;
+    -webkit-background-size:cover;
+    display: block;/*стыкует элементы*/
+}
+
+.up{
+    padding:20px 0;
+    max-width: 950px;
+   color:black;
+    width:100%;
+    margin: 0 auto; 
+    display: block;
+}
+
+h3{
+    font-size:25px;
+    font-family: 'Pacifico', cursive;
+}
+
+h4{
+   font-size: 40px;
+    margin: 0 auto;
+}
+
+h4:after{
+  margin: 0 auto;
+    margin-top: 5px;
+   content:"";
+   display:block;
+   width: 100px;
+   height:3px;
+   background: darkgreen; 
+}
+
+h5{
+    height: 100%;
+    width: 100%;
+    color: darkgreen;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+
+.ph1 {
+    background: url(../image/inst.jpg) center;
+}
+
+.ph1 img{
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+}
+
+.ph1 img:hover{
+    opacity: .7;
+    margin: 5px;
+    transition: opacity .1s linear;
+}
+
+/*межблок*/
+.secttext{
+    display: block;
+    text-align: center;
+    height: 30vh;
+    width:100%;
+    min-height: 100%;
+}
+
+.lph{
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+}
+
+.lph h2{
+    color:black;
+    font-family:"Amatic SC",cursive,sans-serif;
+    font-size: 35px;
+}
+
+.lph h3{
+    font-family:"Ballet",cursive;
+    color:darkolivegreen;
+}
+
+
+/*Команда работников*/
+.command{
+    text-align: center;
+     height: 180vh;
+    width:100%;
+    min-height: 100%;
+    background: url("../image/four.jpg") no-repeat center center;
+    background-size:cover;
+    -webkit-background-size:cover;
+    display: block;/*стыкует элементы*/
+}
+
+ .photo{
+    display: flex;
+     justify-content: space-around;
+    padding: 0px 80px;
+}
+
+.ph{
+    display: block;
+    width:  380px;
+}
+
+.ph2{
+    background: url(/image/fon.jpg) center;
+    transition: transform .3s linear;
+}
+
+.ph2 img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.ph2:hover .text{
+    opacity: 1;   
+}
+
+.ph2 img:hover{
+    transform: translate3d(-10px,-10px,0);
+    opacity: .7;
+    margin: 5px;
+    transition: opacity .1s linear;
+}
+
+.text{
+    display:inline-flex;
+    font-family:"Ballet",cursive;
+    font-size: 25px;
+    color: darkgreen;
+    text-align: center;
+    opacity: 1;
+    font-weight: 700;
+    transition: opacity .2s linear;
+}
+
+
+
+a{
+    color:darkolivegreen;
+    transition: color .2s linear;
+    text-decoration: none;
+    padding-left:25px;
+}
+a:hover{
+    color:chocolate;
+    text-decoration:underline;
+}
+a:active{
+    color: snow;
+}
+
+.secttext{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.txt{
+    display:block;
+    margin: 30px;
+    font-family: 'Pacifico', cursive;
+    font-size: 23px;
+}
+
+.secttext .btn1{
+    margin-top: 30px;
+    border: 3px solid darkolivegreen;
+    background-color: "";
+}
+
+.secttext div {
+   
+    width: 100%;
+}
+
+footer{
+    margin-top: 20px;
+    display: block;
+    background: darkgreen;
+    width: 100%;
+}
+
+footer .title{
+    font-size: 70px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: white;
+    color: darkolivegreen
+}
+
+footer .menu{
+    text-align: center;
+    background: darkolivegreen;
+    width: 100%;
+}
+
+footer .title:after,footer .title:before{
+    margin-bottom: 10px;;
+    content:"";
+    display:block;
+    width: 100%;
+    height:3px;
+    background: darkolivegreen;
+}
+
+footer .l{
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    background: darkolivegreen;
+}
+
+@media (max-width:900px)
+{
+    .blc{display:inline-block;
+       max-width: 400px; 
+    }
+    .ph1 img {width: 200px;
+              height: 200px}
+    h1:after{
+        width: 100;
+    }
+}
+
+@media (max-width:600px)
+{
+    body{
+        width: 100%;
+    }
+    header{
+        height: auto;
+    }
+    .container{
+        width: 100%;
+    }
+    .secttext{
+        width: 100%;
+        height: auto;
+    }
+    .txt{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .command{height: 600px}
+    .text{padding-left: 0px;}
+    .btext h1{font-size: 90px;}
+    .btext h2{font-size: 28px;}
+    .photo{display: flex;
+           width: 100%;
+    padding: 0;
+    margin: 0;}
+    .third{height: auto}
+    .allph .photo {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .btetxt h1: after{
+        height: 0;
+        width:0px;;
+    }
+    .ph1 img {width: 100px;
+              height: 200px}
+    .lph h2{font-size: 25px;}
+    .lph h3{font-size: 27px;}
+    .menu{
+        font-size:28px;
+    }
+    .title{
+        font-size:28px;
+    }
+    .bl .menu{
+        width: 300px;
+    }
+    .blc{
+        padding: 0;
+        margin-left: 0;
+    }
+    .alph{width: 100%}
+    .photo{
+        width: 100%;
+            }
+    
+}
